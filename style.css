@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+}
+@font-face {
+  font-family: 'Digital-7';
+  src: url('digital-7.ttf');
+}
+body{
+    background-image: url('https://png.pngtree.com/background/20230617/original/pngtree-arrow-tipped-3d-stopwatch-picture-image_3704136.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    background-color: black;
+    height: 200px;
+    width: 400px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    user-select: none;
+    cursor: pointer;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  }
+
+
+
+
+.frame{
+  display: flex;
+  gap: 3px;
+}
+
+h3{
+  font-weight: 500;
+  color: yellow;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.hrs,
+.min,
+.sec,
+.ms,
+.colon{
+width: 50px;
+height: 50px;
+font-size: 50px;
+text-align: center;
+line-height: 50px;
+color: #F40009;
+font-family: 'Digital-7';
+}
+.colon{
+width: 10px;
+height: 50px;
+}
+.buttons{
+  margin-top: 25px;
+}
+.buttons button{
+ border: none;
+ padding: 5px 20px;
+ color:white;
+ border-radius: 3px;
+ text-transform: uppercase;
+}
+
+.start{background-color: #32de84;}
+.stop{background-color:  #F40009;}
+.reset{background-color:  #4B0082;}
+
+
+.start-active,
+.stop-active{
+  pointer-events: none;
+  opacity: 0.5;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  #modal-confirm,
+  #modal-cancel {
+    margin: 10px;
+    padding: 5px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #modal-confirm {
+    background-color: #6ab04c;
+    color: white;
+  }
+  
+  #modal-cancel {
+    background-color: #eb4d4b;
+    color: white;
+  }
+  
+
+  
